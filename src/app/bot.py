@@ -52,7 +52,7 @@ class Bot(commands.Bot):
 
     async def on_ready(self) -> None:
         self.logger.info(login_log(user=self.user, guild_amount=len(self.guilds)))
-        await self.change_presence(activity=discord.CustomActivity(name="今日も暑いね〜"))
+        await self.change_presence(activity=discord.CustomActivity(name="MIKUEC楽しかった～！"))
         await self.send_log_message_if_available()
 
     async def load_exts(self) -> None:
